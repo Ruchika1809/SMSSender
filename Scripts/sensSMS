@@ -2,13 +2,13 @@ from twilio.rest import TwilioRestClient
 from twilio.rest import Client
 
 # put your own credentials here
-ACCOUNT_SID = 'AC723ea27dd608d9b8c8feb491658da77c'
-AUTH_TOKEN = '6d2c446a7d0a721152509dc0eda78eee'
+ACCOUNT_SID = 'auth_Id'
+AUTH_TOKEN = 'auth_token'
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
 client.messages.create(
-    to='+918962138634',
-    from_='+13307879898',
-    body='Hey we will revert back to you shortly',
+    to='to whom you wish to send message',
+    from_='verified twilio number',
+    body='body',
 )
